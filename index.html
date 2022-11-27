@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 11px;
+      text-align: center; 
+      margin-top: 40px;
+    }
+    .attribution a {     
+      background-color: #0e1126;
+      padding: 5px;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      margin-top: 40px;
+    }
+    body {
+      background-color: #0a0c1b;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .header {
+      width: fit-content;
+      margin: 200px auto 0;
+  }
+  @media (max-width: 767px ) {
+      .header {
+        width: 362px;
+        text-align: center;
+      }
+    }
+    .container {
+      display: flex;
+      background-color: #1c1938;
+      overflow: hidden;
+      box-shadow: 1px 4px 3px #0a0c1b;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    @media (max-width: 767px ) {
+      .container {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+    .container .text {
+      width: 470px;
+      padding: 70px 0px 70px 70px;
+    }
+    @media (max-width: 767px ) {
+      .container .text {
+        padding: 40px 0 20px 0;
+        width: 320px;
+      }
+    }
+    .container .text > h1 {
+      width: 392px;
+      font-size: 35px;
+      margin: 0;
+    }
+    @media (max-width: 767px ) {
+      .container .text > h1 {
+        width: fit-content;
+        font-size: 32px;
+      }
+    }
+    .container .text h1 span {
+      color: #ab5fdb;
+    }
+    .container .text p {
+      width: 350px;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 24px 0 0;
+      color: #ffffff82;
+      line-height: 1.7;
+    }
+    @media (max-width: 767px ) {
+      .container .text p {
+        width: fit-content;
+      }
+    }
+    .container .text .info {
+      display: flex;
+      justify-content: space-between;
+      width: 320px;
+      text-transform: uppercase;
+    }
+    @media (max-width: 767px ) {
+      .container .text .info {
+        flex-direction: column;
+      }
+    }
+    .info .info-text {
+      margin: 57px 0 0 0;
+    }
+    .info .info-text h1 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .info .info-text h2 {
+      font-size: 10px;
+      color: #ffffff82;
+      letter-spacing: 2px;
+      font-weight: 200;
+      margin: 0;
+    }
+    .photo {
+      position: relative;
+    }
+    .photo img {
+      height: 100%;
+      width: 100%;
+    }
+    .photo::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: #6f2299;
+      opacity: 60%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <div class="text">
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+        <div class="info">
+          <div class="info-text">
+            <h1>10K+</h1>
+            <h2>companies</h2>
+          </div>
+          <div class="info-text">
+            <h1>314</h1>
+            <h2>templates</h2>
+          </div>
+          <div class="info-text">
+            <h1>12M+</h1>
+            <h2>queries</h2>
+          </div>
+        </div>
+    </div>
+    <div class="photo">
+      <img src="./images/image-header-desktop.jpg" alt="">
+    </div>
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.facebook.com/abdoismael0" target="_blank">Bodda</a>
+  </div>
+</body>
+</html>
